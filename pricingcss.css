@@ -1,0 +1,89 @@
+body {
+    background-color: #f8edeb;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.visible {
+    background-color: #fefae0;
+    border-radius: 10px;
+    max-width:960px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    padding:5px 5px;
+    justify-content: space-evenly;
+}
+
+.pimg,.pdimg,.simg{
+    width: 250px;
+    height: 200px;
+    margin-bottom: 25px;
+    justify-content: space-evenly;
+    
+}
+.pricing-plan {
+    border-bottom: 1px solid #e9edc9;
+}
+h2{
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+ul{
+    margin:50px 0 25px;
+    color: :#016ff9;
+}
+
+li{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding:15px 0;
+    padding-top: 1px solid #b0b6d4 ;
+    justify-content: space-evenly;
+}
+span {
+    color:#016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700; 
+}
+
+a {
+    border: 1px solid ;
+    border-radius:10px;
+    color:#348efe;
+    display: inline-block;
+    padding:15px 35px;
+    text-decoration: none;
+    margin:25px 0;
+    transition:background-color 200ms ease-in-out;
+}
+
+a:hover,a:focus {
+    background-color: #e1f1ff;
+}
+
+.access{
+    background-color:#e1f1ff ;
+    transition: background-color 200ms ease-out ;
+}
+.access:hover, .access:focus {
+    background-color: #888;
+    color:white;
+}
+
+@media (min-width:900px){
+    .visible{
+        flex-direction:row;
+        margin:50px 200px;
+        
+        align-items: center;
+        justify-content: space-evenly;
+       
+    }
+}
